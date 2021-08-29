@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <script src="js/main.js"></script>
+       
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">         -->
+        
+    <!-- <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet"> -->
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">   
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.cs">  
+
+
+<!-- <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com"> -->
+<!-- <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">   -->
+  <style>
+
+.banner-btn button{
+  background: #C7E1BF;
+    border-radius: 48px;
+    width: 134px;
+    height: 39px;
+    color: #102522;
+}
+.banner_cont{
+  display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        position: relative;
+        height: 500px;
+} 
+.banner-img img{
+  width: 361px;
+    height: 331px;
+    position: relative;
+    left: 328px;
+    z-index: 99;
+    top: 25px;
+
+}
+.banner-right{
+  background: #ffff;
+          height: 500px;
+}
+.navbar-default {
+    background-color: transparent;
+    border-color: transparent;
+}
+.banner_cont h1{
+  /* font-family: 'Sailec_medium!important'; */
+font-style: normal;
+font-weight: bold;
+font-size: 67px;
+line-height: 120.5%;
+}
+.banner_cont h6{
+  /* font-family: 'Sailec'; */
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+}
+/* .banner_cont p{
+ font-family: Sailec;
+font-style: normal;
+font-weight: normal;
+font-size: 22px;
+} */
+/* card */
+.big_img h2{
+  position: absolute;
+    bottom: 256px;
+    left: 157px;
+    color: #fff;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 59px;
+}
+.img_cont{
+width: 500px;
+    height: 432px;
+    background: #ddd;
+    position: absolute;
+    bottom: 136px;
+    right: 198px;
+    padding: 59px 59px 59px 59px;
+}
+.cont_by{
+    float: right;
+    position: relative;
+    top: 56px;
+}
+.img_cont h5{
+font-size: 33px;
+    letter-spacing: 1px;
+    line-height: 37px;
+    font-style: normal;
+    font-weight: 500;
+    padding: 16px 0 0px 0px;
+}
+.fst_ct{
+float: right;
+}
+.big_img{
+  width: 100%;
+    height: auto;
+    object-fit: contain;
+    object-position: center;
+}
+.big_img img{
+  width: 100%;
+}
+/* position: absolute;
+width: 296px;
+height: 356px;
+left: 234px;
+top: 1413px;
+
+background: url(image.png); */
+.content-heading h1 {
+  text-align: center;
+  margin-left: 20px;
+  font-size: 40px;
+  /* text-transform: uppercase; */
+  margin-bottom: 0;
+}
+.heading-section {
+  width: 60%;
+  text-align: center;
+  margin: auto;
+}
+.heading-section h1 {
+  padding-top: 30px;
+  font-size: 42px;
+}
+.heading-section p {
+  margin-top: 15px;
+  color: #3d3d3d;
+  font-size: 17px;
+}
+.shop{
+  border: 1px solid #102421;
+    box-sizing: border-box;
+    border-radius: 31px;
+    width: 122px;
+    height: 38px;
+    float: right;
+    position: relative;
+    bottom: 30px;
+}
+.content-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+.card {
+  text-align: center;
+  flex: 1;
+  margin: 30px 66px 37px 87px;
+  border-radius: 10px;
+  /* box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px; */
+  /* padding: 15px; */
+}
+.card img {
+  width: 100%;
+    height: 214px;
+    object-fit: cover;
+}
+.card h4 {
+  margin-top: 20px;
+  font-size: 20px;
+  /* font-family: 'Sailec'!important; */
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+}
+.card h6 {
+  /* font-family: "Sailec"; */
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+color: #8F9095;
+}
+.card h5{
+  /* font-family: Sailec; */
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 149.5%;
+/* or 24px */
+
+text-align: center;
+
+color: #8F9095;
+}
+
+/* slider */
+.text-white p{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+.main_hd{
+  margin-top: 101px;
+  margin-bottom: 101px;
+}
+.benefit_img img{
+  display: block;
+    margin: 0 auto;
+
+}
+.benefit_img{
+  text-align: center;
+}
+.benefit_img p{
+  padding: 34px 75px 34px 75px;
+}
+@media screen and (max-width: 640px) {
+  .content-section {
+    flex-direction: column;
+  }
+}
+
+
+  </style>
+    </head>
+    
+    
+    <body>
+      <button onclick="topFunction()" id="myBtn" title="Go to top"><img src="img/tb_btn.png" alt=""></button>
+      <div class="container-fluid"> 
+      
+      <nav class="navbar navbar-default navbar-fixed-top">
+       
+           <div class="col-md-12">
+                <div class="row">
+                  <div class="col-md-7 bg-left">
+            <div class="navbar-header">
+               
+               
+              
+             
+                  
+        <h1 class="brand brand-name navbar-left" style="font-size:22px;"><div class="navbar-left" style="    padding: 0px 0px 15px 34px;">KALOSE</h1>
+          </div></div>
+                   <div class="col-md-5 bg-right" style="padding: 0px 34px 0px 0px;">
+            <div class="collapse navbar-collapse navbar-right" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li><a href="#intro">
+                      How it works</a></li>
+               <li><a href="#about">Products</a></li>
+               <li><a href="#portfolio">Contact Us</a></li>
+              <li><a href="#contact"><img src="img/user_icn.svg" alt=""></a></li>
+              <li class="bd"><span class="badge badge-error">2</span><a href="#contact"><img src="img/cart.svg" alt=""></a></li>
+
+                </ul>
+                     </div></div>
+                  </div></div>
+
+
+                  
+        </div>
+    </nav>
+
+
+    <!-- banner -->
+    <div class="container-fluid">
+    <div class="col-md-12" style="color: #fff;padding: 0px;">
+      <div class="row">
+        <div class="col-md-7 bg-left banner_cont">
+          <div>
+            <h6>BEAUTY</h6>
+            <h1>We’ll take<br>
+            it from here</h1>
+          <p>
+            Skin care is the range of practices that support skin integrity,           </p>
+          
+          <div class="banner-btn">
+            <button>Check Products</button>
+          <button>See Our Video</button>
+          </div>
+          </div>
+         <div class="banner-img"> <img src="img/female.svg" alt="dribble" ></div>
+          </div>
+          <div class="col-md-5 bg-left banner-right">
+          
+          </div>
+          </div>
+          </div>
+          </div>
+
+          <!-- ends..banner -->
+
+        <!-- cards -->
+        <div class="col-md-12">
+          <div class="row">
+            <!-- <div class="heading-section">
+              <h1>Our Blog</h1>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt eius cumque rerum facilis fugiat harum id iste voluptates culpa cupiditate! Sed nihil at deleniti quam.</p>
+            </div> -->
+            <div class="content-heading container">
+              <div class="main_hd"><h1>Our Special Item</h1>
+                <button class="shop">Shop Now <img src="img/arrow.png" alt=""></button>
+              
+              </div>
+              
+
+            
+              <div class="content-section">
+                <div class="card">
+                  <img src="img/f1.svg" alt="">
+                  <h4>Skin & Coat</h4>
+                  <h6>$20 - $25</h6>
+<h5>Premium support for healthy skin and shiny coat</h5>    
+            </div>
+        
+                <div class="card">
+                  <img src="img/f2.svg" alt="">
+                  <h4>Skin & Coat</h4>
+                  <h6>$20 - $25</h6>
+                  <h5>Premium support for healthy skin and shiny coat</h5>    
+                </div>
+                
+                <div class="card">
+                  <img src="img/f3.svg" alt="">
+                  <h4>Skin & Coat</h4>
+                  <h6>$20 - $25</h6>
+                  <h5>Premium support for healthy skin and shiny coat</h5>    
+                </div>
+                
+                <div class="card">
+                  <img src="img/f4.svg" alt="">
+                  <h4>Skin & Coat</h4>
+                  <h6>$20 - $25</h6>
+                  <h5>Premium support for healthy skin and shiny coat</h5>    
+                </div>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+        <!-- cards..edns -->
+
+
+        <!-- big-img -->
+
+        <div class="container-fluid">
+          <div class="col-md-12">
+<div class="big_img">
+  <img src="img/Mask Group.png" alt="big">
+  <h2>What Our Clients <br>Say About Us </h2>
+</div>
+
+<div class="img_cont">
+  <span><img src="img/Vector (1).png" alt=""></span><h5>It is a long established fact that a reader will be distracted by the readable content. </h5>
+  <span class="fst_ct"><img src="img/Vector.png" alt=""></span>
+  <div class="cont_by">
+    <p>Aleena James</p>
+    <h6>Modeling Artist</h6>
+  </div>
+</div>
+
+            </div>
+            </div>
+
+        <!-- big_ends -->
+
+        <!-- slider -->
+        <div class="col-md-12">
+          <div class="row">
+           
+            <div class="content-heading container">
+              <div class="main_hd"><h1>Vitamins tablets</h1>
+                <button class="shop">Shop Now <img src="img/arrow.png" alt=""></button>
+              
+              </div>
+              </div>
+
+
+
+
+              <div class="container-fluid colle">
+          
+                <div class="col-md-12 col-sm-12 col-xs-12 deliver">
+                      
+                       
+                              <div class="slider">
+      <div class="slide">
+        <div class="card" style="max-width: 20rem;">
+    
+      <!-- Card image -->
+      <img class="card-img-top" src="img/s1.png" alt="Card image cap">
+    
+      <!-- Card content -->
+      <div class="card-body text-white rgba-black-light p-2">
+          <p>Naturelo <p>
+            <h6>$20 - $25</h6>
+                  <h5>Premium support for healthy skin and shiny coat</h5>  
+      </div>
+    
+    </div>
+      </div>
+       <div class="slide">
+        <div class="card" style="max-width: 20rem;">
+    
+      <!-- Card image -->
+      <img class="card-img-top" src="img/s2.png" alt="Card image cap">
+    
+      <!-- Card content -->
+      <div class="card-body text-white rgba-black-light p-2">
+          <p>Naturelo<p>
+            <h6>$20 - $25</h6>
+            <h5>Premium support for healthy skin and shiny coat</h5>  
+
+      </div>
+    
+    </div>
+      </div>
+       <div class="slide">
+        <div class="card" style="max-width: 20rem;">
+    
+      <!-- Card image -->
+      <img class="card-img-top" src="img/s3.png" alt="Card image cap">
+    
+      <!-- Card content -->
+      <div class="card-body text-white rgba-black-light p-2">
+          <p>CUTLERY<p>
+            <h6>$20 - $25</h6>
+            <h5>Premium support for healthy skin and shiny coat</h5>  
+
+
+      </div>
+    
+    </div>
+      </div>
+       <div class="slide">
+        <div class="card" style="max-width: 20rem;">
+    
+      <!-- Card image -->
+      <img class="card-img-top" src="img/s4.png" alt="Card image cap">
+    
+      <!-- Card content -->
+      <div class="card-body text-white rgba-black-light p-2">
+          <p>Constipation<p>
+            <h6>$20 - $25</h6>
+            <h5>Premium support for healthy skin and shiny coat</h5>  
+
+      </div>
+    
+    </div>
+      </div>
+       
+         <div class="slide">
+        <div class="card" style="max-width: 20rem;">
+    
+      <!-- Card image -->
+      <img class="card-img-top" src="img/s4.png" alt="Card image cap">
+    
+      <!-- Card content -->
+      <div class="card-body text-white rgba-black-light p-2">
+          <p>Cymbalta<p>
+            <h6>$20 - $25</h6>
+                  <h5>Premium support for healthy skin and shiny coat</h5>  
+      </div>
+    
+    </div>
+      </div>
+    
+    </div>
+    
+                   </div>
+                
+                
+                
+      
+            </div>
+            <!-- our benefits -->
+ <div class="container">
+  <div class="col-md-12">
+    <div class="row">
+      <!-- <div class="heading-section">
+        <h1>Our Blog</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt eius cumque rerum facilis fugiat harum id iste voluptates culpa cupiditate! Sed nihil at deleniti quam.</p>
+      </div> -->
+      <div class="content-heading container">
+        <div class="main_hd"><h1>Our Benefits</h1>
+        
+        </div>
+   <div class="col-md-12">
+     <div class="row">
+       <div class="col-md-4">
+         <div class="benefit_img">
+           <img src="img/b1.png" alt="">
+           <p>High speed delivery, anytime and from anywhere</p>
+         </div>
+       </div>
+       <div class="col-md-4">
+        <div class="benefit_img">
+          <img src="img/b2.png" alt="">
+          <p>More than 1000 stores worldwide.</p>
+        </div>
+       </div>
+       <div class="col-md-4">
+        <div class="benefit_img">
+          <img src="img/b3.png" alt="">
+          <p>We have 24 hrs customer
+            support team </p>
+        </div>
+       </div>
+     </div>
+   </div>
+ </div>
+
+
+
+
+
+
+
+
+
+
+              </div>
+              </div></div>
+
+
+
+<!-- footer -->
+<div class="footer-content pt-5 pb-5">
+  <div class="col-md-12">
+                <div class="row footer-row">
+                    <div class="col-xl-4 col-lg-4 col-sm-3 col-md-4 col-xs-3 mb-50">
+                        <div class="footer-widget">
+                            <div class="footer-logo">
+                              <h1>It’s Glow <br>Time.</h1>
+                                <p>It’s Glow Time.
+                                  ©
+                                  2020 KALOSE LLC. Legal.</p>
+                              
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-2 col-md-2 col-sm-35 col-xs-3 mb-30">
+</div>
+
+                    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-35 col-xs-3 mb-30">
+                        <div class="footer-widget">
+                            <div class="footer-widget-heading">
+                                <h3></h3>
+                            </div>
+                            <ul>
+                                <!--<li><a href="#">Home</a></li>-->
+                                <li style="font-weight: 900;"><a href="#">About Us</a></li>
+                                <li><a href="#">Co-living</a></li>
+                                <li><a href="#">FAQs </a></li>
+                                <li><a href="#">Careers</a></li>
+                                <li><a href="#">The Journal</a></li>
+                                <li><a href="#">Serviced Living</a></li>
+                                <li><a href="#">Venue hire</a></li>
+                                <li><a href="#">Co-working</a></li>
+                          
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-35 col-xs-3 mb-30">
+                      <div class="footer-widget">
+                          <div class="footer-widget-heading">
+                              <h3></h3>
+                          </div>
+                          <ul>                      <li style="font-weight: 900;"><a href="">Get  in touch</a></li>
+                      <li><a href=""> KALOSE Inc,</a></li>
+                      <li><a href="">Century Park East Suite 803,
+                      </a></li>
+                      <li><a href="">Los Angeles,
+                      </a></li>
+                      <li><a href="">+44 (0) 207 543 5478
+                      </a></li>
+
+                    </ul>
+                  </div>
+              </div>                    
+                </div>
+            </div></div>
+
+            
+<script src="bootstrap.min"></script>
+<!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous">-->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js"></script>
+
+<script type="text/javascript">
+$('.slider').slick({
+  //  dots: true,
+  //centerMode:true,
+     autoplay:true,
+    autoplaySpeed:2000,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    responsive: [
+    {
+        breakpoint: 1025,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 2
+        }
+      },
+      {
+        breakpoint: 991,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          infinite: true,
+  //        dots: true
+        }
+      },
+      {
+        breakpoint: 601,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2
+        }
+      },
+      {
+        breakpoint: 481,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+      // You can unslick at a given breakpoint now by adding:
+      // settings: "unslick"
+      // instead of a settings object
+    ]
+  });
+    </script>
+      </body>
+</html>
